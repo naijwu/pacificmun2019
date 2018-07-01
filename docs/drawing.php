@@ -33,6 +33,7 @@
         $('#fullpage').fullpage({
           sectionsColor: ['#303030', '#0C75C7', '#0739A6 ', '#BDDEF5'],
         	anchors:['home', 'letter', 'about', 'links'],
+          licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
 
           afterLoad: function(anchorLink) {
             var loadedSection = this;
