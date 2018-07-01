@@ -844,14 +844,15 @@ function enable() {
   $.pjax.submit = handleSubmit
   $.pjax.reload = pjaxReload
   $.pjax.defaults = {
-    timeout: 1000,
+    timeout: 2000,
     push: true,
     replace: false,
     type: 'GET',
     dataType: 'html',
     scrollTo: false,
     maxCacheLength: 20,
-    version: findVersion
+    version: findVersion,
+    fragment: '#pjax-container'
   }
   $(window).on('popstate.pjax', onPjaxPopstate)
 }
