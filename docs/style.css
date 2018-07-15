@@ -8,6 +8,18 @@
   --animation-ease: cubic-bezier(.87,.05,.41,.86);
 }
 
+::-webkit-scrollbar {
+  width:4px;
+  height:4px;
+}
+
+::-webkit-scrollbar-track {
+  background:rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background:white;
+}
+
 @font-face {
   font-family: Thick;
   src: url(thick.otf);
@@ -63,7 +75,7 @@ h1 {
     background-color: rgb(0,0,0); /* Black fallback color */
     background-color: rgba(0,0,0, 1); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.4s var(--animation-ease); /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    transition: 0.2s var(--animation-ease); /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 
 }
 
@@ -115,6 +127,44 @@ h1 {
 .overlay-top,
 .overlay-bottom {
   width:100%;
+}
+
+.overlay-top-absolute,
+.overlay-bottom-absolute {
+  color:white;
+  font-family:"Thick", sans-serif;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  position:absolute;
+  text-align:center;
+  width:100%;
+  z-index:501;
+}
+
+.overlay-top-absolute {
+  top:30px;
+}
+
+.overlay-bottom-absolute {
+  bottom:30px;
+}
+
+.overlay-right-absolute {
+  width:15vw;
+  height:100vh;
+  position:absolute;
+  right:0;
+  z-index:501;
+  display:flex;
+  align-items:center;
+}
+
+.overlay-right-absolute .toright {
+  text-align:right;
+  padding-right:30px;
+  width:100%;
+  font-family:"Thick", sans-serif;
+  letter-spacing:1px;
 }
 
 /* Position the content inside the overlay */
@@ -323,32 +373,32 @@ a.hover-underline {
 }
 
 .fadeIn {
-  animation: FadeIn 0.8s var(--animation-ease);
+  animation: FadeIn 0.5s var(--animation-ease);
   animation-fill-mode: backwards;
 }
 
 .fadeInLeft {
-  animation: FadeInLeft 0.8s var(--animation-ease);
+  animation: FadeInLeft 0.5s var(--animation-ease);
   animation-fill-mode: backwards;
 }
 
 .fadeInRight {
-  animation: FadeInRight 0.8s var(--animation-ease);
+  animation: FadeInRight 0.5s var(--animation-ease);
   animation-fill-mode: backwards;
 }
 
 .fadeOut {
-  animation: FadeOut 0.8s var(--animation-ease);
+  animation: FadeOut 0.5s var(--animation-ease);
   animation-fill-mode: backwards;
 }
 
 .fadeOutLeft {
-  animation: FadeOutLeft 0.8s var(--animation-ease);
+  animation: FadeOutLeft 0.5s var(--animation-ease);
   animation-fill-mode: backwards;
 }
 
 .fadeOutRight {
-  animation: FadeOutRight 0.8s var(--animation-ease);
+  animation: FadeOutRight 0.5s var(--animation-ease);
   animation-fill-mode: backwards;
 }
 
@@ -422,52 +472,13 @@ h3 {
   font-weight:50;
 }
 
-aside {
-  z-index:525;
-  width:80px;
-  height:100vh;
-  position:fixed;
-  right:0;
-  display:flex;
-  align-items:center;
-}
-
-.sideNav {
-  width:80px;
-  height:auto;
-  text-align:left;
-}
-
-.sideNav .sideNav-bar {
-  height:2.4px;
-  width:80px;;
-  margin:15px 0 20px 0;
-  padding:20px 0 0 0;
-  cursor: pointer;
-  border-style:none none solid none;
-  border-width:.5px;
-  border-color:white;
-}
-
-.sideNav .sideNav-bar .actualbar {
-  height:2.8px;
-  width:35px;
-  background:white;
-  transition: all .15s var(--animation-ease);
-  display:block;
-}
-
-.sideNav .sideNav-bar:hover > .actualbar {
-  width:80px;
-}
-
 
 
 /* ADHOC STYLES */
 
 #adhoc {
   background-color:black;
-  height:100%;
+  height:100vh;
   width:100%;
 }
 
@@ -670,7 +681,7 @@ aside {
 }
 
 .ga-header {
-  margin-left:90px;
+  margin-left:95px;
   padding-bottom:90px;
 }
 
@@ -789,4 +800,99 @@ aside {
   position:fixed;
   z-index:800;
   box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+main {
+}
+
+section {
+  height:auto;
+  width:100%;
+}
+
+section video {
+  height:125vh;
+  object-fit:cover;
+  position:absolute;
+}
+
+.vid-overlay {
+  background:linear-gradient(to bottom, #435AA5, #333366);
+  height:100vh;
+  width:100%;
+  position:absolute;
+  z-index:1;
+  opacity:0.35;
+}
+
+.vid-overlay-bottom {
+  position:relative;
+  display:block;
+  background:linear-gradient(to bottom, rgba(51,51,102,0.35), #212D52);
+  z-index:1;
+  width:100%;
+  height:25vh;
+  margin:0;
+  padding:0;
+}
+
+.frontpage {
+  height:100vh;
+}
+
+.middle {
+  height:100%;
+  display:flex;
+  align-items:center;
+  z-index:500;
+}
+
+.middle h1 {
+  text-transform: uppercase;
+  font-family:"Thick", sans-serif;
+  letter-spacing:5px;
+  text-shadow:0 0 0 var(--colour-logo-dark);
+  bottom: auto;
+  left: auto;
+  position: auto;
+  font-size: 70px;
+  width:100%;
+  text-align:center;
+  z-index:500;
+}
+
+.bg-logo {
+  position:absolute;
+  top:10px;
+  height:450px;
+  z-index:1;
+  opacity:0.3;
+  left:calc(50% - 225px);
+  top:calc(50% - 225px);
+}
+
+section .letter-bg {
+  background:#212D52;
+  color:white;
+  z-index:501;
+}
+
+.letter {
+  width:1000px;
+  margin:0 auto;
+  background:white;
+  height:1000px;
+}
+
+.committeespage header {
+  background:rgba(0,0,0,0.3);
+}
+
+
+/* COMMITTEE GROUPS PAGE */
+
+.backandforthicons a {
+  text-decoration-line:none;
+  border:none;
+  background:rgba(0,0,0,0);
 }

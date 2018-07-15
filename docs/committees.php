@@ -8,34 +8,35 @@
   include "header.php";
 ?>
 
-      <header>
-        <div class="bars" onclick="openNav();">
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        <h2>PACIFICMUN</h2><h3>Committees</h3>
-        <img class="logo" src="logo.svg" alt="logo" />
-      </header>
+      <div class="committeespage">
+        <header>
+          <div class="bars" onclick="openNav();">
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <h2>PACIFICMUN</h2><h3>Committees</h3>
+          <img class="logo" src="logo.svg" alt="logo" />
+        </header>
 
-      <main id="pjax-container">
-        <div id="fullpage">
+        <main>
+          <br><br><br><br><br><br><br>
           <div class="section">
 
             Sketch links (for now):
             <br>
-            <a href="adhoc.php">ADHOC</a>
-            <br>
             <a href="ga.php">General Assemblies</a>
+            <br>
+            <a href="specialized.php">Specialized Committees</a>
+            <br>
+            <a href="regional.php">Regional Body</a>
+            <br>
+            <a href="advanced.php">Advanced Committees</a>
+            <br>
+            <a href="misc.php">Miscellaneous</a>
 
           </div>
-        </div>
-      </main>
-
-      <script type="text/javascript">
-        $('#fullpage').fullpage({
-          sectionsColor: ['#303030']
-        });
-      </script>
+        </main>
+      </div>
 
 <?php
   include "footer.php";

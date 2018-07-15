@@ -54,6 +54,9 @@
     }
 
     $('a').click(function(){
+
+      $.pjax.reload('#pjax-container');
+
       $("#navOverlay").fadeOut("slow");
       $(".overlay-content a").removeClass("fadeIn");
       $(".overlay-content").addClass("fadeOut");

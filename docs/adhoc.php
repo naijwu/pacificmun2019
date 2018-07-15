@@ -18,14 +18,10 @@
       </header>
 
       <main id="pjax-container">
-        <div id="fullpage">
-          <div class="section">
-            <div id="adhoc">
-              <div class="adhoc-inner">
-                <div class="glitch" data-text="ADHOC">
-                  ADHOC
-                </div>
-              </div>
+        <div id="adhoc">
+          <div class="adhoc-inner">
+            <div class="glitch" data-text="ADHOC">
+              ADHOC
             </div>
           </div>
         </div>

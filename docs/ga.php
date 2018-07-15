@@ -17,7 +17,7 @@
         <img class="logo" src="logo.svg" alt="logo" />
       </header>
 
-      <main id="pjax-container">
+      <main>
         <div id="fullpage">
           <div class="section">
             <div id="ga">
@@ -28,20 +28,24 @@
                     General Assemblies
                   </div>
                   <div class="backandforthicons">
-                    <svg height="40" width="30">
-                  		<polyline points="15,10 3,20 15,30" stroke="#FFF" stroke-width="4" fill="none"/>
-                    	<polyline points="3,20 25,20" stroke="#FFF" stroke-width="4" fill="none"/>
-                    </svg>
+                    <a href="misc.php">
+                      <svg height="40" width="30">
+                    		<polyline points="15,10 3,20 15,30" stroke="#FFF" stroke-width="4" fill="none"/>
+                      	<polyline points="3,20 25,20" stroke="#FFF" stroke-width="4" fill="none"/>
+                      </svg>
+                    </a>
                     <svg height="40" width="20">
                     	<polyline points="3,40 20,0" stroke="#FFF" stroke-width="2" fill="none"/>
                     </svg>
-                    <svg height="40" width="30">
-                    	<polyline points="15,10 28,20 15,30" stroke="#FFF" stroke-width="4" fill="none"/>
-                    	<polyline points="3,20 25,20" stroke="#FFF" stroke-width="4" fill="none"/>
-                    </svg>
+                    <a href="specialized.php">
+                      <svg height="40" width="30">
+                      	<polyline points="15,10 28,20 15,30" stroke="#FFF" stroke-width="4" fill="none"/>
+                      	<polyline points="3,20 25,20" stroke="#FFF" stroke-width="4" fill="none"/>
+                      </svg>
+                    </a>
                   </div>
                   <div class="liltext">
-                    DISEC | ECOFIN | LEGAL
+                    DISEC | LEGAL | SPECPOL
                   </div>
                 </div>
               </div>

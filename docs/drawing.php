@@ -1,49 +1,54 @@
-<?php
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>pacificmun drawing - home page</title><?php
   include "header.php";
 ?>
+      <div>
 
-      <header>
-        <div class="bars" onclick="openNav();">
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        <h2>PACIFICMUN</h2><h3>MMXIX</h3>
-        <img class="logo" src="logo.svg" alt="logo" />
-      </header>
+        <header>
+          <div class="bars" onclick="openNav();">
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <h2></h2><h3></h3>
+        </header>
 
-      <aside>
-        <div class="sideNav" id="menu">
-          <div onclick="$.fn.fullpage.moveTo('home',0);" class="sideNav-bar"> <div class="actualbar" id="bar1"></div> </div>
-          <div onclick="$.fn.fullpage.moveTo('letter',0);" class="sideNav-bar"> <div class="actualbar" id="bar2"></div> </div>
-          <div onclick="$.fn.fullpage.moveTo('about',0);" class="sideNav-bar"> <div class="actualbar" id="bar3"></div> </div>
-          <div onclick="$.fn.fullpage.moveTo('links',0);" class="sideNav-bar"> <div class="actualbar" id="bar4"></div> </div>
-        </div>
-      </aside>
+        <main>
 
-      <main id="pjax-container">
-        <div id="fullpage">
-          <div class="section" data-anchor="slide1">Section 1</div>
-          <div class="section" data-anchor="slide2">Section 2</div>
-          <div class="section" data-anchor="slide3">Section 3</div>
-          <div class="section" data-anchor="slide4">Section 4</div>
-        </div>
-      </main>
+          <div class="overlay-top-absolute">
+            February X
+          </div>
 
-      <script type="text/javascript">
-        $('#fullpage').fullpage({
-          sectionsColor: ['#303030', '#0C75C7', '#0739A6 ', '#BDDEF5'],
-        	anchors:['home', 'letter', 'about', 'links'],
-          licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
+          <div class="overlay-bottom-absolute">
+            PacificMUN 2019
+          </div>
 
-          afterLoad: function(anchorLink) {
-            var loadedSection = this;
+          <div class="overlay-right-absolute">
+            <div class="toright">
+              (arrow)
+              <br>
+              SG's Letter
+            </div>
+          </div>
 
-            if(anchorLink == 'home'){
-        			$("#bar1").css("width", "80px");
-        		}
-          }
-        });
-      </script>
+          <section>
+            <div class="vid-overlay"> </div>
+            <!--
+            <video autoplay>
+              <source src="#" type="video/mp4">
+            </video> -->
+            <div class="frontpage">
+              <div class="middle">
+                <h1>PACIFICMUN MMXIX</h1>
+              </div>
+              <img class="bg-logo" src="logo.svg" alt="logo" />
+            </div>
+          </section>
+
+        </main>
+      </div>
 
 <?php
   include "footer.php";

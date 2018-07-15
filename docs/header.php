@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>pacificmun drawing - about page</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
     <script src="fullpage.js"></script>
     <script src="jquery.pjax.js"></script>
 
@@ -38,11 +34,11 @@
 
           <!-- Overlay content -->
           <div class="overlay-content">
-            <a href="drawing.php" onmouseover="hoverpacific();" onmouseout="hoverdefault();">PacificMUN</a>
-            <a href="about.php" onmouseover="hoverabout();" onmouseout="hoverdefault();">About Us</a>
-            <a href="committees.php" onmouseover="hovercommittees();" onmouseout="hoverdefault();">Committees</a>
-            <a href="conference.php" onmouseover="hoverconference();" onmouseout="hoverdefault();">Conference</a>
-            <a href="registration.php" onmouseover="hoverregistration();" onmouseout="hoverdefault();">Registration</a>
+            <a href="drawing.php">PacificMUN</a>
+            <a href="about.php">About Us</a>
+            <a href="committees.php">Committees</a>
+            <a href="conference.php">Conference</a>
+            <a href="registration.php">Registration</a>
           </div>
 
 <!--
