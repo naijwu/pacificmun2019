@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pacific Model UN</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+
+    @font-face {
+      font-family: Thick;
+      src: url(thick.otf);
+    }
+
+      .landingsmall .landingsmall-header {
+        width:1100px;
+        margin:0 auto;
+        height:100%;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+      }
+
+      .landingsmall .landingsmall-header .container {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+      }
+
+      .landingsmall .landingsmall-header img {
+        height:100px;
+        padding-bottom:10px;
+      }
+
+      .landingsmall .landingsmall-header h2 {
+        padding:0 0 25px 0;
+        text-align:center;
+        width:100%;
+        text-transform: uppercase;
+        font-family: "Thick", sans-serif;
+        letter-spacing: 5px;
+        text-align:center;
+        color:white;
+        font-size:34px;
+        margin:20px 0 0 0;
+        padding:0;
+      }
+
+      .landingsmall .landingsmall-header h1 {
+        text-transform: uppercase;
+        font-family: "Thick", sans-serif;
+        letter-spacing: 5px;
+        font-size:20px;
+        text-align:center;
+        color:white;
+      }
+
+      .dbl {
+        width:100vw;
+        height:900px;
+        max-height:103vh;
+        margin-bottom:-6vw;
+        background:black;
+        clip-path: polygon(
+          0 0,
+          100% 6vw,
+          100% 100%,
+          0 calc(100% - 6vw)
+        );
+        z-index:1000;
+        box-shadow:0 0 20px rgba(0,0,0,0.4);
+        background:linear-gradient(to bottom left, #273470, #273470);
+        border:none;
+      }
+
+      body {
+        height:100%;
+        display:flex;
+        align-items:center;
+        background:linear-gradient(to bottom, #273470, #273470);
+        margin:0;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      AOS.init();
+
+      $(window).scroll(function(){
+    		$("#parallaximg").css({
+          "transform": "translateY(-" + $(window).scrollTop() / 12 + "px)"
+        });
+    	});
+    </script>
+
+    <div class="landingsmall dbl">
+      <div class="landingsmall-header">
+        <div class="container">
+          <img data-aos="fade-up"
+              data-aos-duration="1500" src="logo.svg" alt="logo" />
+          <h2 data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-duration="1500">PacificMUN 2019</h2>
+          <h1 data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1500">Coming Soon</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,7 +1,9 @@
 
 
   <script>
-    $(document).pjax('a', '#pjax-container' );
+    var Scrollbar = window.Scrollbar;
+
+    Scrollbar.init(document.querySelector('#my-scrollbar'), options);
 
     /* Open when someone clicks on the span element */
     function openNav() {

@@ -1,0 +1,230 @@
+@font-face {
+  font-family: Thick;
+  src: url(thick.otf);
+}
+
+@font-face {
+  font-family: Thin;
+  src: url(thin.otf);
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+#topheader {
+  height:100px;
+  position:fixed;
+  width:100vw;
+}
+
+#topheader h2 {
+  float:left;
+  display:inline-block;
+  height:100px;
+  line-height:80px;
+  color:black;
+  padding:0 20px;
+  font-size:18px;
+  font-family:"Poppins", sans-serif;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+
+#topheader h2.middlealign {
+  float:right;
+}
+
+.backgrounderpage {
+  height:100%;
+  width:100%;
+}
+
+.header {
+  height:100%;
+  width:100%;
+  display:table;
+}
+
+.content {
+}
+
+.title {
+  z-index: 500;
+  margin: 0 auto;
+  box-sizing:border-box;
+  text-align: left;
+  height:100%;
+  width:100%;
+  display:flex;
+}
+
+.left,
+.right {
+  display:flex;
+  align-items:flex-start;
+  padding-top:10%;
+}
+
+.left {
+  flex-grow:1;
+}
+
+.right {
+  flex-grow:4;
+}
+
+.right-inner h2 {
+  padding-left:0;
+  margin-top:0;
+  font-family:"Thin", sans-serif;
+  text-transform: uppercase;
+  color:white;
+  letter-spacing:2px;
+  font-weight:600;
+}
+
+.left-inner {
+  padding-left:90px;
+}
+
+.left-inner h2 {
+  padding-left:0;
+  margin-top:0;
+  color:white;
+  font-family:"Thick", sans-serif;
+  letter-spacing:1px;
+  text-transform: uppercase;
+}
+
+.left-inner h5 {
+  padding-top:17px;
+  padding-bottom:7px;
+  font-weight:bold;
+  font-size: 0.85em;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:white;
+  font-family:"Poppins", sans-serif;
+}
+
+.options a i.fa {
+  margin-right:10px;
+  color:white;
+}
+
+.options a h2 {
+  position:relative;
+  display:inline-block;
+  line-height:25px;
+  margin:5px 0;
+  font-family:"Thick", sans-serif;
+  font-size:18px;
+}
+
+.options a h2::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2.2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.options a h2:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.title h1 {
+  padding: 0.2em 0 0.2em;
+  color: #fff;
+  font-weight: 800;
+  margin: 0 auto;
+  font-family:"Thick", sans-serif;
+  letter-spacing:2px;
+
+  bottom:auto;
+  left:auto;
+  position:relative;
+  font-size:60px;
+}
+
+.title p {
+  color: #fff;
+  padding: 0 0 0.6em;
+  font-weight: 300;
+  font-size: 0.85em;
+  margin: 0 auto;
+  letter-spacing:0.5px;
+  font-family:"Thin", sans-serif;
+}
+
+.title h1 {
+  line-height: 1;
+}
+
+.title p.subline {
+  line-height: 1;
+  font-size: 0.85em;
+  font-family:"Poppins", sans-serif;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+}
+
+.backgrounderpage .bg-img {
+  position: absolute;
+  overflow: hidden;
+  top: 85px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background:#777;
+}
+.backgrounderpage .bg-img img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  object-position:90% 0;
+}
+
+.backgrounderpage .bg-img .bg-img-overlay {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  z-index:1;
+}
+
+.backgrounderpage .bg-img .overlay-cap {
+  position:absolute;
+  bottom:0;
+  right:0;
+  padding: 0 10px 7px 0;
+}
+
+.backgrounderpage .title {
+  z-index: 500;
+  margin: 0 auto;
+  box-sizing:border-box;
+  text-align: left;
+  position: absolute;
+  height:100%;
+  width:100%;
+  display:flex;
+}
+
+.container {
+  width:1100px;
+  margin:0 auto;
+}

@@ -1,0 +1,176 @@
+@font-face {
+  font-family: Thick;
+  src: url(../thick.otf);
+}
+
+@font-face {
+  font-family: Thin;
+  src: url(../thin.otf);
+}
+
+* {
+  margin:0;
+  padding:0;
+  font-weight:normal;
+}
+
+strong {
+  font-weight:bold;
+}
+
+img {
+  object-fit:cover;
+}
+
+main {
+  width:1000px;
+  margin:0 auto;
+  display:flex;
+  padding-top:150px;
+  flex-direction: column;
+}
+
+main.second {
+  padding-top:10px;
+}
+
+img {
+  width:calc(100% - 50px);
+  margin:45px 25px 0 25px;
+  height:85vh;
+  display:table;
+}
+
+.left {
+  width:100%;
+  padding:10px 0 15px 0;
+}
+
+.right {
+  width:70%;
+  margin:0 auto;
+}
+
+main h1 {
+  font-family:"Thick", serif;
+  font-weight:bold;
+  letter-spacing:1px;
+  font-size:70px;
+  color:#313143;
+  text-align:left;
+}
+
+main h4 {
+  font-family:"Rubik", sans-serif;
+  letter-spacing:1px;
+  font-size:18px;
+  line-height:26px;
+  padding-top:5px;
+  color:rgba(0,0,0,0.6);
+  text-align:left;
+}
+
+h2 {
+  font-family:"Thick", sans-serif;
+  font-size:16px;
+  letter-spacing:2px;
+  text-transform: uppercase;
+  line-height:24px;
+  padding-top:15px;
+}
+
+h3 {
+  font-family:"Rubik", sans-serif;
+  letter-spacing:0.5px;
+  font-size:16px;
+  line-height:24px;
+}
+
+h5 {
+  font-family:"Thick", sans-serif;
+  letter-spacing:0.5px;
+  font-size:24px;
+  line-height:26px;
+  padding-top:5px;
+  padding-top:60px;
+}
+
+h6 {
+  font-family:"Rubik", sans-serif;
+  letter-spacing:1px;
+  font-size:18px;
+  line-height:26px;
+  padding-top:5px;
+  color:rgba(0,0,0,0.6);
+  padding-top:30px;
+}
+
+p {
+  font-family:"Rubik", sans-serif;
+  font-size:18px;
+  line-height:27px;
+  letter-spacing:0.25px;
+  padding:20px 0 0 0;
+}
+
+ul,
+ol {
+  margin-left:35px;
+}
+
+li {
+  font-family:"Rubik", sans-serif;
+  font-size:16px;
+  line-height:24px;
+  letter-spacing:0.25px;
+  padding:12.5px 0 0 0;
+}
+
+table {
+  width:100%;
+}
+
+table th {
+  text-align:left;
+    font-family:"Rubik", sans-serif;
+    font-size:16px;
+    line-height:24px;
+    letter-spacing:0.25px;
+    padding:12.5px 0 0 0;
+}
+
+#resourcesp main {
+  margin-top:50px;
+  padding-top:0;
+}
+
+#resourcesp main p {
+  box-sizing: border-box;
+  padding:0 10px;
+  width:24%;
+}
+
+#resourcesp .cont {
+  width:1000px;
+  margin:0 auto;
+  padding-top:150px;
+}
+
+#resourcesp main a {
+  box-sizing: border-box;
+  /*
+  padding:5px 10px;
+  margin-top:15px;
+  */
+  display:table;
+  margin-top:10px;
+  margin-bottom:0;
+  width:100%;
+}
+
+
+
+
+.pospap p {
+  font-family:"Times New Romans", serif;
+}

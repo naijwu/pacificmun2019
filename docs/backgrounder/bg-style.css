@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Thick;
+  src: url(../thick.otf);
+}
+
+@font-face {
+  font-family: Thin;
+  src: url(../thin.otf);
+}
+
+@font-face {
+  font-family: SlimThick;
+  src: url(../CooperHewitt-Book.otf);
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+main {
+  width:100%;
+  padding:100px 0;
+}
+
+main .container {
+  width:700px;
+  margin:0 auto;
+}
+
+main .container h2 {
+  font-family: "Nunito", sans-serif;
+  font-size:30px;
+  font-weight:bold;
+}
+
+main .container p {
+  font-family: "Nunito", sans-serif;
+  line-height:24px;
+}
