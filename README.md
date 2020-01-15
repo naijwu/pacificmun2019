@@ -2,7 +2,7 @@
 
 This repo contain the files of the PacificMUN website
 
-Some stats:
+Some info:
  - made from scratch
  - took a while
  - I like it
