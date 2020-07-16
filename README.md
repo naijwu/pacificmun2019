@@ -2,7 +2,6 @@
 
 This repo contain the files of the PacificMUN website
 
-Some info:
- - made from scratch
- - took a while
- - I like it
+Made for the 2019 iteration, also used in the 2020 iteration
+
+I think its kinda dope LOL
